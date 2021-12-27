@@ -64,6 +64,15 @@
       const foundIndex = comments.findIndex((el) => el.id === 823423);
       console.log(foundIndex);
       // delete the comment with the ID of 823423
+      console.table(comments);
+      comments.splice(foundIndex, 1);
+      console.table(comments);
+
+      const newComments = [
+        ...comments.slice(0, found),
+        ...comments.slice(found + 1),
+      ];
+      console.table(newComments);
     </script>
   </body>
 </html>
