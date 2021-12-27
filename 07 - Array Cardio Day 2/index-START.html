@@ -48,13 +48,21 @@
           false;
         }
       });
+      console.log(isEveryoneAdult);
 
       // Array.prototype.find()
       // Find is like filter, but instead returns just the one you are looking for
-      // find the comment with the ID of 823423
+      // // find the comment with the ID of 823423
+      // const found = comments.find(function (el) {
+      //   return el.id === 823423;
+      // });
 
+      const found = comments.find((el) => el.id === 823423);
+      console.log(found);
       // Array.prototype.findIndex()
       // Find the comment with this ID
+      const foundIndex = comments.findIndex((el) => el.id === 823423);
+      console.log(foundIndex);
       // delete the comment with the ID of 823423
     </script>
   </body>
